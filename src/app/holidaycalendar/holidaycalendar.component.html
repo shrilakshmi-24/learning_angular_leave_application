@@ -1,0 +1,16 @@
+<div class="holiday--card--container">
+    <div class="card-container" *ngFor="let i of holidays">
+        <!-- Card 1 -->
+        <div class="holiday-card">
+            <div>
+                <h1>{{i.date}}</h1>
+            </div>
+            <div class="info-item">
+               {{i.month + i.year}}
+            </div>
+            <div class="info-item">
+                <h3> {{i.reason}}</h3>
+            </div>
+        </div>
+    </div>
+</div>

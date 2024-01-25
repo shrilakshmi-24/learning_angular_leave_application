@@ -1,0 +1,27 @@
+<div class="leave-form">
+    <form>
+      <label for="fromdate">From Date:</label>
+      <input type="date" id="fromdate" name="fromdate" placeholder="From Date" required>
+  
+      <label for="todate">To Date:</label>
+      <input type="date" id="todate" name="todate" placeholder="To Date" required>
+  
+      <label for="type">Leave Type:</label>
+      <select id="type" name="type" required>
+        <option value="sick">Sick leave</option>
+        <option value="casual">Casual leave</option>
+        <option value="earned">Earned leave</option>
+        <option value="compoff">Compoff leave</option>
+        <option value="lop">Loss of Pay</option>
+      </select>
+  
+      <label for="reason">Reason:</label>
+      <textarea id="reason" name="reason" placeholder="Description" required></textarea>
+  
+      <label for="description">Additional Comments:</label>
+      <textarea id="description" name="description" placeholder="Additional Comments"></textarea>
+  
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  

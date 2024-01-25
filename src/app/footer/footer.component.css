@@ -1,0 +1,10 @@
+.footer{
+    background-color: chocolate;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.footer p{
+    background-color: chocolate;
+}

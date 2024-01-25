@@ -1,0 +1,41 @@
+.user-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  h2 {
+    color: #333;
+  }
+
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .options a {
+    display: block;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+
+  .options a:hover {
+    background-color: #2185d0;
+  }
+
+  .logout {
+    margin-top: 20px;
+    color: #c0392b;
+    cursor: pointer;
+    text-decoration: underline;
+  }

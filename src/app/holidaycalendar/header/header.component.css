@@ -1,0 +1,19 @@
+h3 {
+    font-family: 'Arial', sans-serif;
+    color: #3498db; /* Change the color to your preference */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+  .header{
+    display: flex;
+    border-bottom-color: grey;
+  }
+  .logo{
+    width: 90%;
+  }
+  .profile{
+    width: 10%;
+    padding-top: 20px;
+  }

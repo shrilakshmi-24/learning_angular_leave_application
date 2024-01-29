@@ -4,24 +4,15 @@ import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LeavesComponent } from './leaves/leaves.component';
 import { HolidaycalendarComponent } from './holidaycalendar/holidaycalendar.component';
-import { LeaveApplicationComponent } from './leave-application/leave-application.component';
-import { HomeComponent } from './home/home.component';
-import { LeaveHistoryComponent } from './leave-history/leave-history.component';
-
+import { LeaveApplicationComponent } from './leaves/leave-application/leave-application.component';
+import { LeaveHistoryComponent } from './leaves/leave-history/leave-history.component';
 
 const routes: Routes = [
   {
     path: '',
     component: LoginComponent,
   },
-  {
-    path:'home',
-    component:HomeComponent
-  },
-  {
-    path:'apply',
-    component:LeaveApplicationComponent
-  },
+ 
   {
     path: 'login',
     component: LoginComponent,
@@ -33,19 +24,26 @@ const routes: Routes = [
   {
     path: 'leaves',
     component: LeavesComponent,
+    children: [
+      { path: '', redirectTo: 'history', pathMatch: 'full' },
+      {
+        path: 'history',
+        component: LeaveHistoryComponent,
+      },
+      {
+        path: 'apply',
+        component: LeaveApplicationComponent,
+      },
+    ],
   },
+
   {
-    path:'history',
-    component:LeaveHistoryComponent
+    path: 'holiday',
+    component: HolidaycalendarComponent,
   },
-  {
-    path:'holiday',
-    component:HolidaycalendarComponent
-  }
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
-

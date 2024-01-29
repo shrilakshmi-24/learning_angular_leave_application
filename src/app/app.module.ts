@@ -8,12 +8,12 @@ import { HolidaycalendarComponent } from './holidaycalendar/holidaycalendar.comp
 import { HeaderComponent } from './holidaycalendar/header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { LeaveApplicationComponent } from './leave-application/leave-application.component';
+import { LeaveApplicationComponent } from './leaves/leave-application/leave-application.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { LeavesComponent } from './leaves/leaves.component';
 import { LeavesAdminComponent } from './leaves-admin/leaves-admin.component';
-import { HomeComponent } from './home/home.component';
-import { LeaveHistoryComponent } from './leave-history/leave-history.component';
+import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LeaveHistoryComponent } from './leaves/leave-history/leave-history.component';
 
 @NgModule({
   declarations: [
@@ -28,14 +28,16 @@ import { LeaveHistoryComponent } from './leave-history/leave-history.component';
     SideBarComponent,
     LeavesComponent,
     LeavesAdminComponent,
-    HomeComponent,
-    LeaveHistoryComponent,
+    LeaveHistoryComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
+   
+    
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

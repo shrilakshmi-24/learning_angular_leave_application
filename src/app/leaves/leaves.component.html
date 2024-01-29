@@ -1,7 +1,10 @@
+<!-- leaves.component.html -->
 <div class="leaves--page">
-    <div class="leaves--side--bar">
-        <a href="">Leaves History</a>
-        <a routerLink="home">Leave Apply</a>
+    <div class="leaves--top-navbar">
+        <a routerLink="history" routerLinkActive="active">Leaves History</a>
+        <a routerLink="apply" routerLinkActive="active">Leave Apply</a>
     </div>
-    <div class="leave--history"></div>
+    <div class="leave--history">
+        <router-outlet></router-outlet>
+    </div>
 </div>

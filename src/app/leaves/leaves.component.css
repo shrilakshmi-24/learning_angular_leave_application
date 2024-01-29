@@ -1,0 +1,35 @@
+/* leaves.component.css */
+.leaves--page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.leaves--top-navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+}
+
+.leaves--top-navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.leaves--top-navbar a:hover {
+    background-color: #555;
+}
+
+.leaves--top-navbar a.active {
+    background-color: #4CAF50;
+}
+
+.leave--history {
+    flex: 1;
+    padding: 10px;
+}

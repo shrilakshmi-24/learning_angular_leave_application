@@ -1,0 +1,22 @@
+<h3>Leave History</h3>
+<div class="leave--history">
+  <table>
+    <tr>
+      <!-- <th>Name</th> -->
+      <th>From Date</th>
+      <th>To Date</th>
+      <th>Leave Type</th>
+      <th>Reason</th>
+      <th>Status</th>
+    </tr>
+    <tr *ngFor="let i of leaveHistory">
+      <td>{{ i.fromdate }}</td>
+      <td>{{ i.todate }} - {{ i.todate }}</td>
+      <td>{{ i.type }}</td>
+      <td>{{ i.reason }}</td>
+      <td>Pending</td>
+    </tr>
+    <!-- Add more rows as needed -->
+  </table>
+</div>
+

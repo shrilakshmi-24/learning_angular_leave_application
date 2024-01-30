@@ -26,9 +26,11 @@
   .holiday-card:hover {
     transform: scale(1.05); /* Add a slight scale effect on hover */
   }
-
+h1{
+    color: aqua;
+}
   h2 {
-    color: #4c4949;
+    color: #3f8da9;
   }
 
   .holiday-info {
@@ -41,5 +43,5 @@
   }
 
   .info-value {
-    color: #555;
+    color: #0514e8;
   }

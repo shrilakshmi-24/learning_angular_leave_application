@@ -1,7 +1,12 @@
 import { Component,OnInit } from '@angular/core';
 import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
-import { LeaveService } from 'src/app/leave.service';
+import { LeaveService } from 'src/app/services/leave.service';
 import toastr from 'toastr'
+
+toastr.options = {
+  closeButton: true,
+  progressBar: true,
+};
 @Component({
   selector: 'app-leave-application',
   templateUrl: './leave-application.component.html',
@@ -33,8 +38,9 @@ export class LeaveApplicationComponent implements OnInit{
         this.storedFormData = this.reactiveForm.value;
         console.log('Form submitted with data:', this.storedFormData);
         this.leaveService.addLeave(this.storedFormData)
+
+        toastr.success('Form submitted successfully!', 'Hurrah!')
         this.reactiveForm.reset()
-        // toastr.success('Have fun storming the castle!', 'Miracle Max Says')
         // this.leaveHistory.push(this.storedFormData)
       }
 

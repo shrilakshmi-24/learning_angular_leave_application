@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LeaveService } from 'src/app/leave.service';
+import { LeaveService } from 'src/app/services/leave.service';
 
 @Component({
   selector: 'app-leave-history',

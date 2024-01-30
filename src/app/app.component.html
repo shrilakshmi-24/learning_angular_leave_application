@@ -1,15 +1,21 @@
-
-
-<!-- <app-login></app-login> -->
+<!-- app.component.html -->
 
 <div class="header">
     <app-header></app-header>
 </div> 
- <div class="section">
+<div class="section">
     <div class="sidebar"> 
         <a routerLink="/holiday">Holidays</a>
         <a routerLink="/leaves">Leaves</a>
+        <!-- Conditionally show login or logout based on isLoggedIn -->
+        <ng-container *ngIf="!isLoggedIn">
+            <a routerLink="/login">Login</a>
+        </ng-container>
+        <ng-container *ngIf="isLoggedIn">
+            <button (click)="logout()">Logout</button>
+        </ng-container>
     </div>
+    
     <div class="content"><router-outlet></router-outlet></div>
    
 </div> 

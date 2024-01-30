@@ -1,16 +1,17 @@
+<!-- login.component.html -->
 <div class="login-container">
     <h2>Login</h2>
-    <form class="login-form">
+    <form class="login-form" [formGroup]="loginForm" (ngSubmit)="verifyLogin()">
         <div class="form-group">
             <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required #username>
+            <input type="text" id="username" name="username" formControlName="username" required>
         </div>
         <div class="form-group">
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required #password>
+            <input type="password" id="password" name="password" formControlName="password" required>
         </div>
         <div class="form-group">
-            <button type="submit" (click)="checkLogin()">Login</button>
+            <button type="submit" [disabled]="loginForm.invalid">Login</button>
         </div>
     </form>
 </div>

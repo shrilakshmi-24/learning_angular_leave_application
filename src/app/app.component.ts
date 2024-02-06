@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 import { AuthService } from './services/auth.service';
 import { Router } from '@angular/router';
 
@@ -16,6 +16,7 @@ export class AppComponent {
 
   logout() {
     this.authService.isLoggedIn = false;
+    alert("logged out successfully")
     this.router.navigate(['/login']);
   }
 }

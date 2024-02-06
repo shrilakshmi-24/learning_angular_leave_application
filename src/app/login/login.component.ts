@@ -40,11 +40,11 @@ export class LoginComponent {
       this.router.navigate(['/leaves']);
     } else {
       alert('Error Logging in');
+      setTimeout(() => {
+        this.loginForm.reset();
+      });
+      
     }
   }
 
-  logout() {
-    this.authService.isLoggedIn = false;
-    this.router.navigate(['/login']);
-  }
 }

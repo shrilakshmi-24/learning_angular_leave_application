@@ -14,6 +14,8 @@ import { LeavesComponent } from './leaves/leaves.component';
 import { LeavesAdminComponent } from './leaves-admin/leaves-admin.component';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LeaveHistoryComponent } from './leaves/leave-history/leave-history.component';
+import { AuthService } from './services/auth.service';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -34,10 +36,16 @@ import { LeaveHistoryComponent } from './leaves/leave-history/leave-history.comp
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    AppRoutingModule,
-   
+    AppRoutingModule, 
     
   ],
+  providers: [AuthService,
+  //   {
+  //   provide: HTTP_INTERCEPTORS,
+  //   useClass: AppHttpInterceptor,
+  //   multi: true
+  // }
+],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

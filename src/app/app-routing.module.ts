@@ -6,6 +6,7 @@ import { LeavesComponent } from './leaves/leaves.component';
 import { HolidaycalendarComponent } from './holidaycalendar/holidaycalendar.component';
 import { LeaveApplicationComponent } from './leaves/leave-application/leave-application.component';
 import { LeaveHistoryComponent } from './leaves/leave-history/leave-history.component';
+import { AuthService } from './services/auth.service';
 
 const routes: Routes = [
   {
@@ -20,10 +21,12 @@ const routes: Routes = [
   {
     path: 'profile',
     component: ProfileComponent,
+    canActivate: [AuthService], // Assuming AuthService has canActivate method
   },
   {
     path: 'leaves',
     component: LeavesComponent,
+    canActivate: [AuthService],
     children: [
       { path: '', redirectTo: 'history', pathMatch: 'full' },
       {
@@ -40,8 +43,10 @@ const routes: Routes = [
   {
     path: 'holiday',
     component: HolidaycalendarComponent,
+    canActivate: [AuthService],
   },
 ];
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],

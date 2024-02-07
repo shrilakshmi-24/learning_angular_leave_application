@@ -7,37 +7,37 @@ import { Component } from '@angular/core';
 })
 export class HolidaycalendarComponent {
   holidays:any = [{
-    date:25,
+    date:24,
     month:'Nov',
     year: 2024,
     reason:"Shrilakshmi ka Birthday"
   },
   {
-    date:25,
+    date:24,
     month:'Nov',
     year: 2024,
     reason:"Shrilakshmi ka Birthday"
   },
   {
-    date:25,
+    date:24,
     month:'Nov',
     year: 2024,
     reason:"Shrilakshmi ka Birthday"
   },
   {
-    date:25,
+    date:24,
     month:'Nov',
     year: 2024,
     reason:"Shrilakshmi ka Birthday"
   },
   {
-    date:25,
+    date:24,
     month:'Nov',
     year: 2024,
     reason:"Shrilakshmi ka Birthday"
   },
   {
-    date:25,
+    date:24,
     month:'Nov',
     year: 2024,
     reason:"Shrilakshmi ka Birthday"

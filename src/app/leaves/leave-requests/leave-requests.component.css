@@ -1,0 +1,56 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+
+  th {
+    background-color: #3498db;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  td {
+    color: #555;
+  }
+  .leave--history{
+    display: flex;
+    justify-content: center;
+  }
+  h3{
+    margin-left: 15%;
+  }
+  
+  .accept-btn {
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .reject-btn {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .button-cell {
+    white-space: nowrap; /* Prevent line break */
+  }
+  
+  .accept-btn, .reject-btn {
+    display: inline-block;
+    margin-right: 5px; /* Add space between buttons */
+  }
+  

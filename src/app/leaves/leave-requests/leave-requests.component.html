@@ -1,4 +1,3 @@
-
 <h3>Leave History</h3>
 <div class="leave--history">
   <table>
@@ -8,14 +7,19 @@
       <th>Leave Type</th>
       <th>Reason</th>
       <th>Status</th>
+      <th>Approve/reject</th>
       
     </tr>
-    <tr *ngFor="let data of leaveHistory let i=index" >
+    <tr *ngFor="let data of leaveRequest let i=index" >
       <td>{{ data.fromdate }}</td>
       <td>{{ data.todate }}</td>
       <td>{{ data.type }}</td>
       <td>{{ data.reason }}</td>
       <td>{{data.status}}</td>
+      <td class="button-cell">
+        <button class="accept-btn" (click)="acceptLeave(i)">Accept</button>
+        <button class="reject-btn" (click)="rejectLeave(i)">Reject</button>
+      </td>
     </tr>
   </table>
   

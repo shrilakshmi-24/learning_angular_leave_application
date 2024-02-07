@@ -7,6 +7,7 @@ import { HolidaycalendarComponent } from './holidaycalendar/holidaycalendar.comp
 import { LeaveApplicationComponent } from './leaves/leave-application/leave-application.component';
 import { LeaveHistoryComponent } from './leaves/leave-history/leave-history.component';
 import { AuthService } from './services/auth.service';
+import { LeaveRequestsComponent } from './leaves/leave-requests/leave-requests.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
       {
         path: 'apply',
         component: LeaveApplicationComponent,
+      },
+      {
+        path: 'request',
+        component: LeaveRequestsComponent,
       },
     ],
   },

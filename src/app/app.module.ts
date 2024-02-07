@@ -11,11 +11,11 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { LeaveApplicationComponent } from './leaves/leave-application/leave-application.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { LeavesComponent } from './leaves/leaves.component';
-import { LeavesAdminComponent } from './leaves-admin/leaves-admin.component';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LeaveHistoryComponent } from './leaves/leave-history/leave-history.component';
 import { AuthService } from './services/auth.service';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { LeaveRequestsComponent } from './leaves/leave-requests/leave-requests.component';
 
 @NgModule({
   declarations: [
@@ -29,8 +29,8 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
     LeaveApplicationComponent,
     SideBarComponent,
     LeavesComponent,
-    LeavesAdminComponent,
-    LeaveHistoryComponent
+    LeaveHistoryComponent,
+    LeaveRequestsComponent
   ],
   imports: [
     BrowserModule,
